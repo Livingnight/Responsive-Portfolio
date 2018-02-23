@@ -14,7 +14,7 @@ html {
     position: relative;
 }
 body {
-    background: #777777;
+    background: #777777 url("../images/intersection.png");
     height: 100%;
     /*position: relative;*/
 }
@@ -38,11 +38,11 @@ body {
 
 }
 .header-links a {
-    /*display: inline;*/
+    display: inline;
     float: right;
     text-align: center;
-    margin-right: 2.5%;
-    margin-left: 2.5%;
+    /*margin-right: 2.5%;*/
+    /*margin-left: 2.5%;*/
     padding-right: 100px;
     text-decoration: none;
 
@@ -68,7 +68,7 @@ body {
 }
 .main-content{
     background: #ffffff;
-    margin: 10px px 0 10px;
+    margin: 10px 0;
 }
 .main-content header{
     font-size: 24px;
@@ -84,8 +84,9 @@ body {
     margin:0;
 }
 .content-container p{
-    /*padding-top: 20px;*/
+    padding-top: 20px;
     text-indent: 30px;
+    line-height: 25px;
 }
 .connect-content{
     background:#ffffff;
@@ -105,22 +106,25 @@ body {
 }
 
 footer {
-    margin-top: 30px;
+    margin-top: 100%;
     padding-top: 100px;
+    border-top: 5px solid #4aaaa5;
     text-align: center;
     height:75px;
-    background: #ffffff;
+    background: #333333;
+    color: #ffffff;
     line-height: 75px;
     position: static;
     bottom: 0;
 
 }
 /* For mobile phones: */
-
-[class*="col-"] {
-    width: 100%;
-}
-@media only screen and (min-width: 681px) {
+/*@media only screen and (max-width:680px) {*/
+    [class*="col-"] {
+        width: 100%;
+    }
+/*}*/
+@media only screen and (min-width: 680px) {
     /* For tablet: */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -134,12 +138,14 @@ footer {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
-}
-/*.content-container img{*/
-    /*height:200px;*/
-/*}*/
 
-@media only screen and (min-width: 960px) {
+
+    .main-container img{
+        height:200px;
+    }
+}
+
+@media only screen and (min-width: 980px) {
     /* For desktop: */
     .col-m-1 {width: 8.33%;}
     .col-m-2 {width: 16.66%;}
@@ -153,6 +159,10 @@ footer {
     .col-m-10 {width: 83.33%;}
     .col-m-11 {width: 91.66%;}
     .col-m-12 {width: 100%;}
+
+    .main-content img{
+        height: 300px;
+    }
 }
 
 
