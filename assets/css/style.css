@@ -16,31 +16,33 @@ html {
 body {
     background: #777777 url("../images/intersection.png");
     height: 100%;
-    /*position: relative;*/
 }
 .header{
     max-width: 980px;
     margin: 0 auto;
     white-space: nowrap;
 }
-.header div{
-    /*max-width: 980;*/
-}
+
 .header header {
     background: #4aaaa5;
     color: #ffffff;
     text-align: center;
+    font-size: 30px;
+    padding: 15px 0px 15px 0;
+    white-space: nowrap;
 }
 
 .header-links{
     /*float: right;*/
     background: white;
-    text-align: left;
+    text-align: right;
+    font-size: 20px;
+    padding: 20px;
     /*padding-right: 20px;*/
 
 }
 .header-links a {
-    display: inline;
+    /*display: inline;*/
     /*float: right;*/
     text-align: right;
     padding-right: 10%;
@@ -53,28 +55,40 @@ body {
     border: none;
     /*padding: 0;*/
 }
-.header-links a:link{
-    color: #333333;
+a:link{
+    color: #dddddd;
     text-decoration: none;
+}
+.header-links a:link{
+    color: #777777;
+}
+a:active{
+    color: #dddddd;
 }
 .header-links a:active{
-    color: #333333;
+    color: #777777;
 }
-.header-links a:visited{
-    color: #333333;
+a:visited{
+    color: #dddddd;
     text-decoration: none;
 }
-.header-links a:hover {
+.header-links a:visited{
+    color: #777777;
+}
+a:hover {
     color: crimson;
+}
+.header-links a:link{
+    color:crimson;
 }
 
 .content-container{
     max-width: 980px;
-    margin: 10px auto;
+    margin: 30px auto;
 }
 .main-content{
     background: #ffffff;
-    margin: 10px 0;
+    margin: 10px 0 10px;
 }
 .main-content header{
     font-size: 24px;
@@ -96,7 +110,7 @@ body {
 }
 .connect-content{
     background:#ffffff;
-    margin: 10px 0;
+    margin: 10px 0 30px;
 }
 .connect-content header{
     font-size: 24px;
@@ -112,24 +126,117 @@ body {
 }
 
 footer {
-    margin-top: 100%;
+    margin-top: 25px;
     padding-top: 100px;
     border-top: 5px solid #4aaaa5;
     text-align: center;
     height:75px;
     background: #333333;
     color: #ffffff;
-    line-height: 75px;
+    line-height: 45px;
     position: static;
     bottom: 0;
 
 }
+input[class = 'input']{
+    width: 100%;
+}
+textarea{
+    width: 100%;
+}
+input[class='submit']{
+    background: #4aaaa5;
+    color: #ffffff;
+    font-size: 25px;
+}
+.img1{
+    background-image: url("../images/01-abstract-q-c-300-125-6.jpg");
+    margin-bottom:30px;
+    height: 250px;
+}
+.img2{
+    background-image: url("../images/02-abstract-q-c-300-125-7.jpg");
+    margin-bottom: 30px;
+    height: 250px;
+}
+.img3{
+    background-image: url("../images/03-abstract-q-c-300-125-10.jpg");
+    margin-bottom: 30px;
+    height: 250px;
+}
+.img4{
+    background-image: url("../images/04-abstract-q-c-100-100-1.jpg");
+    margin-bottom: 30px;
+    height: 250px;
+}
+.img5{
+    background-image: url("../images/05-technics-q-c-300-125-2.jpg");
+    margin-bottom: 30px;
+    height: 250px;
+}
+.img6{
+    background-image: url("../images/06-technics-q-c-300-125-4.jpg");
+    margin-bottom: 30px;
+    height: 250px;
+}
+#p1 {
+    background-color: #4aaaa5;
+    width: 106%;
+    line-height: 30px;
+    text-align: center;
+    margin: 150px 0 0 -15px;
+    /*opacity: .75;*/
+    padding: 15px;
+}
+#p2  {
+    background-color: #4aaaa5;
+    width: 106%;
+    line-height: 30px;
+    text-align: center;
+    margin: 150px 0 0 -15px;
+    /*opacity: .75;*/
+    padding: 15px;
+}
+#p3 {
+    background-color: #4aaaa5;
+    width: 106%;
+    line-height: 30px;
+    text-align: center;
+    margin: 150px 0 0 -15px;
+    /*opacity: .75;*/
+    padding: 15px;
+}
+#p4 {
+    background-color: #4aaaa5;
+    width: 106%;
+    line-height: 30px;
+    text-align: center;
+    margin: 150px 0 0 -15px;
+    /*opacity: .75;*/
+    padding: 15px;
+}
+#p5 {
+    background-color: #4aaaa5;
+    width: 106%;
+    line-height: 30px;
+    text-align: center;
+    margin: 150px 0 0 -15px;
+    /*opacity: .75;*/
+    padding: 15px;
+}
+#p6 {
+    background-color: #4aaaa5;
+    width: 106%;
+    line-height: 30px;
+    text-align: center;
+    margin: 150px 0 0 -15px;
+    /*opacity: .75;*/
+    padding: 15px;
+}
 /* For mobile phones: */
-/*@media only screen and (max-width:680px) {*/
     [class*="col-"] {
         width: 100%;
     }
-/*}*/
 @media only screen and (min-width: 680px) {
     /* For tablet: */
     .col-1 {width: 8.33%;}
@@ -145,23 +252,108 @@ footer {
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 
+    .img1{
+        background-image: url("../images/01-abstract-q-c-300-125-6.jpg");
+        height: 250px;
+        margin: 15px 50px;
+    }
+    .img2{
+        background-image: url("../images/02-abstract-q-c-300-125-7.jpg");
+        height: 250px;
+        margin: 15px 0;
+    }
+    .img3{
+        background-image: url("../images/03-abstract-q-c-300-125-10.jpg");
+        height: 250px;
+        margin: 15px 50px;
+    }
+    .img4{
+        background-image: url("../images/04-abstract-q-c-100-100-1.jpg");
+        height: 250px;
+        margin: 15px 0;
+    }
+    .img5{
+        background-image: url("../images/05-technics-q-c-300-125-2.jpg");
+        height: 250px;
+        margin: 15px 50px;
+    }
+    .img6{
+        background-image: url("../images/06-technics-q-c-300-125-4.jpg");
+        height: 250px;
+        margin: 15px 0;
+    }
+
+    #p1 {
+        background-color: #4aaaa5;
+        width: 112%;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 150px;
+        /*opacity: .75;*/
+        padding: 15px;
+    }
+    #p2  {
+        background-color: #4aaaa5;
+        width: 112%;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 150px;
+        /*opacity: .75;*/
+        padding: 15px;
+    }
+    #p3 {
+        background-color: #4aaaa5;
+        width: 112%;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 150px;
+        /*opacity: .75;*/
+        padding: 15px;
+    }
+    #p4 {
+        background-color: #4aaaa5;
+        width: 112%;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 150px;
+        /*opacity: .75;*/
+        padding: 15px;
+    }
+    #p5 {
+        background-color: #4aaaa5;
+        width: 112%;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 150px;
+        /*opacity: .75;*/
+        padding: 15px;
+    }
+    #p6 {
+        background-color: #4aaaa5;
+        width: 112%;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 150px;
+        /*opacity: .75;*/
+        padding: 15px;
+    }
 
     .main-container img{
         height:200px;
     }
+    .links{
+        float: right;
+    }
     .header-links a {
         display: inline;
-        float: right;
         text-align: right;
         margin: 0 15px 0 auto;
         border-right: 1px solid #777777;
-        /*margin-left: 2.5%;*/
         text-decoration: none;
         padding-right: 15px;
     }
     .header-links a:first-child{
-        border:none;
-        padding: 0;
+        padding-right: 25px;
     }
 
 }
@@ -184,22 +376,113 @@ footer {
     .main-content img{
         height: 300px;
     }
-    .header-links a {
-        display: inline-block;
-        float: right;
+    nav {
         text-align: right;
+    }
+    .header-links a {
+        display: inline;
+        /*float: right;*/
         margin: 0 20px 0 auto;
-        border-right: 1px solid #777777;
+        /*border-right: 1px solid #777777;*/
         /*margin-left: 2.5%;*/
         text-decoration: none;
         /*padding-right: 15px;*/
     }
-    .header-links a:first-child{
-        /*border:none;*/
-        padding: 0;
+    .main-content{
+        background: #ffffff;
+        margin: 10px 0 100px;
     }
+    footer{
+        position: fixed;
+        bottom: 0;
+        margin-top: 25px;
+        padding-top: 100px;
 
-
+    }
+    .img1{
+        background-image: url("../images/01-abstract-q-c-300-125-6.jpg");
+        margin:10px 0 30px 4%;
+        height: 250px;
+    }
+    .img2{
+        background-image: url("../images/02-abstract-q-c-300-125-7.jpg");
+        margin:10px 0 30px 4%;
+        height: 250px;
+    }
+    .img3{
+        background-image: url("../images/03-abstract-q-c-300-125-10.jpg");
+        margin:10px 0 30px 4%;
+        height: 250px;
+    }
+    .img4{
+        background-image: url("../images/04-abstract-q-c-100-100-1.jpg");
+        margin:10px 0 30px 4%;
+        height: 250px;
+    }
+    .img5{
+        background-image: url("../images/05-technics-q-c-300-125-2.jpg");
+        margin:10px 0 30px 4%;
+        height: 250px;
+    }
+    .img6{
+        background-image: url("../images/06-technics-q-c-300-125-4.jpg");
+        margin:10px 0 30px 4%;
+        height: 250px;
+    }
+    #p1 {
+        background-color: #4aaaa5;
+        width: 106.6%;
+        line-height: 30px;
+        text-align: center;
+        margin: 150px 0 0 -15px;
+        /*opacity: .75;*/
+        padding: 15px;
+    }
+    #p2  {
+        background-color: #4aaaa5;
+        width: 106.6%;
+        line-height: 30px;
+        text-align: center;
+        margin: 150px 0 0 -15px;
+        /*opacity: .75;*/
+        padding: 15px;
+    }
+    #p3 {
+        background-color: #4aaaa5;
+        width: 106.6%;
+        line-height: 30px;
+        text-align: center;
+        margin: 150px 0 0 -15px;
+        /*opacity: .75;*/
+        padding: 15px;
+    }
+    #p4 {
+        background-color: #4aaaa5;
+        width: 106.6%;
+        line-height: 30px;
+        text-align: center;
+        margin: 150px 0 0 -15px;
+        /*opacity: .75;*/
+        padding: 15px;
+    }
+    #p5 {
+        background-color: #4aaaa5;
+        width: 106.6%;
+        line-height: 30px;
+        text-align: center;
+        margin: 150px 0 0 -15px;
+        /*opacity: .75;*/
+        padding: 15px;
+    }
+    #p6 {
+        background-color: #4aaaa5;
+        width: 106.6%;
+        line-height: 30px;
+        text-align: center;
+        margin: 150px 0 0 -15px;
+        /*opacity: .75;*/
+        padding: 15px;
+    }
 }
 
 
