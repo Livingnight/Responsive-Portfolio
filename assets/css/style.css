@@ -21,6 +21,7 @@ body {
 .header{
     max-width: 980px;
     margin: 0 auto;
+    white-space: nowrap;
 }
 .header div{
     /*max-width: 980;*/
@@ -34,18 +35,23 @@ body {
 .header-links{
     /*float: right;*/
     background: white;
+    text-align: left;
     /*padding-right: 20px;*/
 
 }
 .header-links a {
     display: inline;
-    float: right;
-    text-align: center;
-    /*margin-right: 2.5%;*/
-    /*margin-left: 2.5%;*/
-    padding-right: 100px;
+    /*float: right;*/
+    text-align: right;
+    padding-right: 10%;
+    margin-left: 10%;
     text-decoration: none;
+    border-right: 1px solid #777777;
 
+}
+.header-links a:last-child {
+    border: none;
+    /*padding: 0;*/
 }
 .header-links a:link{
     color: #333333;
@@ -143,6 +149,21 @@ footer {
     .main-container img{
         height:200px;
     }
+    .header-links a {
+        display: inline;
+        float: right;
+        text-align: right;
+        margin: 0 15px 0 auto;
+        border-right: 1px solid #777777;
+        /*margin-left: 2.5%;*/
+        text-decoration: none;
+        padding-right: 15px;
+    }
+    .header-links a:first-child{
+        border:none;
+        padding: 0;
+    }
+
 }
 
 @media only screen and (min-width: 980px) {
@@ -163,6 +184,22 @@ footer {
     .main-content img{
         height: 300px;
     }
+    .header-links a {
+        display: inline-block;
+        float: right;
+        text-align: right;
+        margin: 0 20px 0 auto;
+        border-right: 1px solid #777777;
+        /*margin-left: 2.5%;*/
+        text-decoration: none;
+        /*padding-right: 15px;*/
+    }
+    .header-links a:first-child{
+        /*border:none;*/
+        padding: 0;
+    }
+
+
 }
 
 
